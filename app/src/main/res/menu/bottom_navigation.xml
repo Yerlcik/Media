@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title=""
+        android:checked="false"
+        />
+    <item android:id="@+id/nav_book"
+        android:title=""
+        android:checked="false"
+        android:icon="@drawable/ic_bookmark_black_24dp"/>
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_center"
+         android:color="#ff512f"
+        android:iconTint="#ff512f"
+        android:state_checked="true"
+        android:checked="true"
+
+        android:title=""
+        />
+
+    <item android:id="@+id/nav_alert"
+        android:title=""
+        android:checked="false"
+        android:icon="@drawable/ic_add_alert_black_24dp"/>
+
+    <item android:id="@+id/nav_profile"
+        android:title=""
+        android:checked="false"
+        android:icon="@drawable/ic_person_outline_black_24dp"/>
+
+</menu>

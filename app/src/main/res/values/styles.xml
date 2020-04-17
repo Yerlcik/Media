@@ -1,0 +1,14 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="android:textColor">#0E0A07</item>
+        <item name="actionMenuTextColor">#0A0A0A</item>
+
+        <item name="colorPrimaryDark">#0E0A07</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ActionBar.Solid.Ribbit.TitleTextStyle"
+        parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#0E0A07</item>
+    </style>
+</resources>
