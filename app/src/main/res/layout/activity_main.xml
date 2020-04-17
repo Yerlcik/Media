@@ -5,22 +5,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/top"-->
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="false"-->
+    <!--        android:background="#FFF"-->
+    <!--        app:itemIconSize="35dp"-->
+    <!--        app:itemIconTint="#000"-->
+    <!--        app:itemTextColor="#000"-->
+    <!--        app:labelVisibilityMode="labeled"-->
+    <!--        app:menu="@menu/top_nav" />-->
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recyclerView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/top"-->
+    <!--        android:layout_alignParentBottom="true"-->
+
+    <!--        android:layout_marginTop="2dp"-->
+    <!--        android:layout_marginBottom="54dp"-->
+    <!--        android:background="#161620"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/bot"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/top"-->
+    <!--        tools:listitem="@layout/item_news" />-->
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/bot"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:background="#FFF"-->
+    <!--        app:itemIconSize="35dp"-->
+    <!--        app:itemIconTint="@color/bnv_tab_item_foreground"-->
+    <!--        app:itemTextColor="@color/bnv_tab_item_foreground"-->
+    <!--        app:labelVisibilityMode="labeled"-->
+    <!--        app:menu="@menu/bottom_navigation" />-->
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="677dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="54dp"
-
-        android:background="#161620"
-        app:layout_constraintBottom_toTopOf="@+id/bot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/item_news" />
-
+        android:layout_height="match_parent"
+        android:layout_above="@id/bot"/>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bot"
         android:layout_width="match_parent"
@@ -32,5 +64,12 @@
         app:itemTextColor="@color/bnv_tab_item_foreground"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_navigation" />
+    <com.example.kotlinsocialmedia.SwipeDisabledViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bot"
+        android:layout_alignParentTop="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </RelativeLayout>

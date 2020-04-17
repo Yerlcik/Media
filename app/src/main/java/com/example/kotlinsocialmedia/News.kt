@@ -2,6 +2,7 @@ package com.example.kotlinsocialmedia
 
 import android.os.Parcel
 import android.os.Parcelable
+import java.util.*
 
 class News : Parcelable {
     var date: String?
@@ -35,6 +36,18 @@ class News : Parcelable {
 
     fun setLike(like: Boolean) {
         isLiked = like
+    }
+
+    fun like() {
+        likesCount = likesCount + 1
+    }
+
+    fun setLikesCountt(likesCount: Int) {
+        this.likesCount = likesCount
+    }
+
+    fun setImagess(images: Int) {
+        this.images = images
     }
 
 
@@ -75,18 +88,21 @@ class News : Parcelable {
     }
 
 //    companion object {
-//        val CREATOR: Parcelable.Creator<News> = object : Parcelable.Creator<News> {
-//            override fun createFromParcel(source: Parcel): News {
+//        var newsList: List<News> = ArrayList()
+//        var database: List<News> = ArrayList()
+//        val CREATOR: Parcelable.Creator<News> = object : Parcelable.Creator<News?> {
+//            override fun createFromParcel(source: Parcel): News? {
 //                return News(source)
 //            }
 //
-//            override fun newArray(size: Int): Array<News> {
+//            override fun newArray(size: Int): Array<News?> {
 //                return arrayOfNulls(size)
 //            }
 //        }
 //    }
 
     companion object CREATOR : Parcelable.Creator<News> {
+        var newsList: List<News> = ArrayList()
         override fun createFromParcel(parcel: Parcel): News {
             return News(parcel)
         }

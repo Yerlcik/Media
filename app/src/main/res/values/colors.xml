@@ -5,4 +5,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="likeCliked">#FF0000</color>
     <color name="notLike">#FFF</color>
+    <color name="colorButton">#00FFFFFF</color>
+
 </resources>
