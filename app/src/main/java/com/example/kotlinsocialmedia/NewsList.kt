@@ -90,17 +90,17 @@ class NewsList : Fragment() {
     }
 
     private fun populaterecyclerviewstories() {
-        var storiesModel = StoriesModel("mumbiker.nikkhil", R.drawable.a1)
+        var storiesModel = StoriesModel("nature", R.drawable.a1)
         storiesModelArrayList.add(storiesModel)
-        storiesModel = StoriesModel("carryminati", R.drawable.a2)
+        storiesModel = StoriesModel("rachel", R.drawable.a2)
         storiesModelArrayList.add(storiesModel)
-        storiesModel = StoriesModel("bhuvan.bam", R.drawable.a3)
+        storiesModel = StoriesModel("barat", R.drawable.a3)
         storiesModelArrayList.add(storiesModel)
-        storiesModel = StoriesModel("easportsfifa", R.drawable.propic4)
+        storiesModel = StoriesModel("birzhan", R.drawable.propic4)
         storiesModelArrayList.add(storiesModel)
-        storiesModel = StoriesModel("championsleague", R.drawable.av5)
+        storiesModel = StoriesModel("ztb", R.drawable.av5)
         storiesModelArrayList.add(storiesModel)
-        storiesModel = StoriesModel("leomessi", R.drawable.av8)
+        storiesModel = StoriesModel("qumash", R.drawable.av8)
         storiesModelArrayList.add(storiesModel)
     }
 
@@ -109,31 +109,31 @@ class NewsList : Fragment() {
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
         val items: MutableList<News> = ArrayList()
         val n1 =
-            News("02/21/2020 11:45", "Asma Moyeed", "Loved ones", getString(R.string.first), 1, 5)
+            News("11/01/2020 09:08", "Carl Breez", "My life", getString(R.string.first), 1, 5)
         n1.setImagess(R.drawable.a1)
         val n2 = News(
-            "02/22/2020 01:21",
-            "Toni Plant",
-            "The Lamb and The Wild Beasts",
+            "12/01/2020 21:11",
+            "Black Jack",
+            "The rich man",
             getString(R.string.second),
             1,
             5
         )
         n2.setImagess(R.drawable.a3)
         val n3 =
-            News("02/22/2020 01:20", "S. F. Tilly", "Angry world", getString(R.string.third), 5, 5)
+            News("12/01/2020 01:20", "C. Ronaldo", "Goal", getString(R.string.third), 5, 5)
         n3.setImagess(R.drawable.a2)
-        val n4 = News("02/22/2020 01:29", "Zaa_aaah", "Me", getString(R.string.fo), 0, 5)
+        val n4 = News("12/01/2020 05:20", "Baha", "Me", getString(R.string.fo), 0, 5)
         n4.setImagess(R.drawable.av4)
         val n5 =
-            News("02/22/2020 01:21", "cmukti", "Thrubbing silencees", getString(R.string.fiv), 1, 5)
+            News("20/02/2020 01:21", "Smurf", "Thrubbing silencees", getString(R.string.fiv), 1, 5)
         n5.setImagess(R.drawable.av5)
-        val n6 = News("02/22/2020 01:22", "Bsn", "Celest", getString(R.string.six), 15, 5)
+        val n6 = News("05/02/2020 21:11", "Bsn", "Celest", getString(R.string.six), 15, 5)
         n6.setImagess(R.drawable.av6)
         val n7 = News(
             "01/27/2020 10:17",
-            "Ankita Chaturvedi",
-            "Being Strong Alone",
+            "Messi",
+            "Champion",
             getString(R.string.seven),
             195,
             5

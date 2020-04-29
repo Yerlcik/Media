@@ -14,7 +14,6 @@
 
         android:layout_marginTop="2dp"
         android:background="#161620"
-        app:layout_constraintBottom_toTopOf="@+id/bot"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintStart_toStartOf="parent"
